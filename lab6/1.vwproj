@@ -1,0 +1,105 @@
+<!DOCTYPE VWVisProject>
+<VWVisProject>
+  <ProjectPart ID="VisNetwork">
+    <Node X="-1441" Y="-842" Name="vtkConeSource4" ClassName="vtkConeSource" ID="0">
+      <Property Type="double" Name="Height" Value="1"/>
+      <Property Type="double" Name="Radius" Value="0.5"/>
+      <Property Type="Point3D" Name="Center" Value="0, 0, 0"/>
+      <Property Type="Vector3D" Name="Direction" Value="1, 0, 0"/>
+      <Property Type="double" Name="Angle" Value="26.565051177078"/>
+      <Property Type="bool" Name="Capping" Value="true"/>
+      <Property Type="int" Name="Resolution" Value="120"/>
+      <Property Type="int" Name="HasExecutive" Value="1"/>
+      <Property Type="bool" Name="AbortExecution" Value="false"/>
+      <Property Type="bool" Name="ReleaseDataFlag" Value="false"/>
+      <Property Type="QString" Name="NodeName" Value="vtkConeSource4"/>
+      <Property Type="QString" Name="objectName" Value="vtkConeSource4"/>
+    </Node>
+    <Node X="-1581" Y="-640" Name="vtkPolyDataMapper5" ClassName="vtkPolyDataMapper" ID="1">
+      <Property Type="bool" Name="ShowScalars" Value="true"/>
+      <Property Type="int" Name="HasExecutive" Value="1"/>
+      <Property Type="bool" Name="AbortExecution" Value="false"/>
+      <Property Type="bool" Name="ReleaseDataFlag" Value="false"/>
+      <Property Type="QString" Name="NodeName" Value="vtkPolyDataMapper5"/>
+      <Property Type="QString" Name="objectName" Value="vtkPolyDataMapper5"/>
+    </Node>
+    <Node X="-1424" Y="-535" Name="vtkActor6" ClassName="vtkActor" ID="2">
+      <Property Type="QColor" Name="Color" Value="#ea45ff,255"/>
+      <Property Type="double" Name="Opacity" Value="1"/>
+      <Property Type="Point3D" Name="Position" Value="0, 0, 0"/>
+      <Property Type="Point3D" Name="Scale" Value="1, 1, 1"/>
+      <Property Type="Point3D" Name="Orientation" Value="0, 0, 0"/>
+      <Property Type="bool" Name="Visible" Value="true"/>
+      <Property Type="bool" Name="Pickable" Value="true"/>
+      <Property Type="bool" Name="Dragable" Value="true"/>
+      <Property Type="QString" Name="NodeName" Value="vtkActor6"/>
+      <Property Type="QString" Name="objectName" Value="vtkActor6"/>
+    </Node>
+    <Node X="-1412" Y="-413" Name="vtkRenderer7" ClassName="vtkRenderer" ID="3">
+      <Property Type="QColor" Name="BackgroundColor" Value="#6442ff,255"/>
+      <Property Type="bool" Name="ShowGrid" Value="false"/>
+      <Property Type="bool" Name="LightsFollowCamera" Value="true"/>
+      <Property Type="bool" Name="TwoSidedLighting" Value="true"/>
+      <Property Type="QString" Name="NodeName" Value="vtkRenderer7"/>
+      <Property Type="QString" Name="objectName" Value="vtkRenderer7"/>
+    </Node>
+    <Node X="-1406" Y="-314" Name="vtkRenderWindow8" ClassName="vtkRenderWindow" ID="4">
+      <Property Type="QString" Name="NodeName" Value="vtkRenderWindow8"/>
+      <Property Type="QString" Name="objectName" Value="vtkRenderWindow8"/>
+    </Node>
+    <Node X="-1497" Y="-744" Name="ContourFilter" ClassName="vtkPolyDataNormals" ID="5">
+      <Property Type="double" Name="FeatureAngle" Value="30"/>
+      <Property Type="bool" Name="Splitting" Value="true"/>
+      <Property Type="bool" Name="Consistency" Value="true"/>
+      <Property Type="bool" Name="AutoOrientNormals" Value="false"/>
+      <Property Type="bool" Name="ComputePointNormals" Value="true"/>
+      <Property Type="bool" Name="ComputeCellNormals" Value="false"/>
+      <Property Type="bool" Name="FlipNormals" Value="false"/>
+      <Property Type="bool" Name="NonManifoldTraversal" Value="true"/>
+      <Property Type="int" Name="HasExecutive" Value="1"/>
+      <Property Type="bool" Name="AbortExecution" Value="false"/>
+      <Property Type="bool" Name="ReleaseDataFlag" Value="false"/>
+      <Property Type="QString" Name="NodeName" Value="ContourFilter"/>
+      <Property Type="QString" Name="objectName" Value="ContourFilter"/>
+    </Node>
+    <Node X="-1297" Y="-677" Name="vtkProperty101" ClassName="vtkProperty" ID="6">
+      <Property Type="Interpolation" Name="Interpolation" Value="1"/>
+      <Property Type="Representation" Name="Representation" Value="2"/>
+      <Property Type="QColor" Name="Color" Value="#ea45ff,255"/>
+      <Property Type="double" Name="Ambient" Value="1"/>
+      <Property Type="double" Name="Diffuse" Value="1"/>
+      <Property Type="double" Name="Specular" Value="1"/>
+      <Property Type="double" Name="SpecularPower" Value="1"/>
+      <Property Type="double" Name="Opacity" Value="1"/>
+      <Property Type="QColor" Name="AmbientColor" Value="#ea45ff,255"/>
+      <Property Type="QColor" Name="DiffuseColor" Value="#ea45ff,255"/>
+      <Property Type="QColor" Name="SpecularColor" Value="#ea45ff,255"/>
+      <Property Type="bool" Name="EdgeVisibility" Value="false"/>
+      <Property Type="QColor" Name="EdgeColor" Value="#8a55ff,255"/>
+      <Property Type="double" Name="LineWidth" Value="1"/>
+      <Property Type="int" Name="LineStipplePattern" Value="65535"/>
+      <Property Type="int" Name="LineStippleRepeatFactor" Value="1"/>
+      <Property Type="double" Name="PointSize" Value="1"/>
+      <Property Type="bool" Name="BackfaceCulling" Value="false"/>
+      <Property Type="bool" Name="FrontfaceCulling" Value="false"/>
+      <Property Type="QString" Name="VertexShaderCode" Value=""/>
+      <Property Type="QString" Name="FragmentShaderCode" Value=""/>
+      <Property Type="QString" Name="ShaderVariables" Value="int|intVariable|(null)|float|floatVariable|(null)|double|doubleVariable|(null)"/>
+      <Property Type="bool" Name="ShaderEnabled" Value="false"/>
+      <Property Type="QString" Name="NodeName" Value="vtkProperty101"/>
+      <Property Type="QString" Name="objectName" Value="vtkProperty101"/>
+      <EProperty Type="QString" Name="intVariable (int)" Value="" Index="0"/>
+      <EProperty Type="QString" Name="floatVariable (float)" Value="" Index="1"/>
+      <EProperty Type="QString" Name="doubleVariable (double)" Value="" Index="2"/>
+    </Node>
+    <Connection Sender="vtkPolyDataMapper5" SPathIndex="3" Receiver="vtkActor6" RPathIndex="3"/>
+    <Connection Sender="vtkActor6" SPathIndex="2" Receiver="vtkRenderer7" RPathIndex="1"/>
+    <Connection Sender="vtkRenderer7" SPathIndex="3" Receiver="vtkRenderWindow8" RPathIndex="1"/>
+    <Connection Sender="vtkConeSource4" SPathIndex="2" Receiver="ContourFilter" RPathIndex="3"/>
+    <Connection Sender="ContourFilter" SPathIndex="2" Receiver="vtkPolyDataMapper5" RPathIndex="2"/>
+    <Connection Sender="vtkProperty101" SPathIndex="1" Receiver="vtkActor6" RPathIndex="5"/>
+  </ProjectPart>
+  <ProjectPart ID="ScriptEnvironment"/>
+  <ProjectPart ID="Script"><![CDATA[]]></ProjectPart>
+  <ProjectPart ID="VtkSystem"/>
+</VWVisProject>

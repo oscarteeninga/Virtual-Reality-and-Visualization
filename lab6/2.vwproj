@@ -1,0 +1,98 @@
+<!DOCTYPE VWVisProject>
+<VWVisProject>
+  <ProjectPart ID="VisNetwork">
+    <Node X="-1504" Y="-819" Name="vtkSphere11" ClassName="vtkSphere" ID="0">
+      <Property Type="double" Name="Radius" Value="0.5"/>
+      <Property Type="Point3D" Name="Center" Value="0, 0, 0"/>
+      <Property Type="QString" Name="NodeName" Value="vtkSphere11"/>
+      <Property Type="QString" Name="objectName" Value="vtkSphere11"/>
+    </Node>
+    <Node X="-1351" Y="-628" Name="vtkSampleFunction12" ClassName="vtkSampleFunction" ID="1">
+      <Property Type="OutputScalarType" Name="OutputScalarType" Value="11"/>
+      <Property Type="QList&lt;QVariant>" Name="ModelBounds" Value="-1, 1, -1, 1, -1, 1"/>
+      <Property Type="bool" Name="Capping" Value="false"/>
+      <Property Type="double" Name="CapValue" Value="1e+299"/>
+      <Property Type="bool" Name="ComputeNormals" Value="true"/>
+      <Property Type="QList&lt;QVariant>" Name="SampleDimensions" Value="50, 50, 50"/>
+      <Property Type="int" Name="HasExecutive" Value="1"/>
+      <Property Type="bool" Name="AbortExecution" Value="false"/>
+      <Property Type="bool" Name="ReleaseDataFlag" Value="false"/>
+      <Property Type="QString" Name="NodeName" Value="vtkSampleFunction12"/>
+      <Property Type="QString" Name="objectName" Value="vtkSampleFunction12"/>
+    </Node>
+    <Node X="-1370" Y="-544" Name="vtkContourFilter13" ClassName="vtkContourFilter" ID="2">
+      <Property Type="int" Name="NumberOfContours" Value="3"/>
+      <Property Type="bool" Name="ComputeNormals" Value="true"/>
+      <Property Type="bool" Name="ComputeGradients" Value="false"/>
+      <Property Type="bool" Name="ComputeScalars" Value="true"/>
+      <Property Type="int" Name="ScalarArrayComponent" Value="0"/>
+      <Property Type="ValueRange" Name="ValueRange" Value="0, 1"/>
+      <Property Type="int" Name="HasExecutive" Value="1"/>
+      <Property Type="bool" Name="AbortExecution" Value="false"/>
+      <Property Type="bool" Name="ReleaseDataFlag" Value="false"/>
+      <Property Type="QString" Name="NodeName" Value="vtkContourFilter13"/>
+      <Property Type="QString" Name="objectName" Value="vtkContourFilter13"/>
+    </Node>
+    <Node X="-1360" Y="-424" Name="vtkDataSetMapper14" ClassName="vtkDataSetMapper" ID="3">
+      <Property Type="bool" Name="ShowScalars" Value="true"/>
+      <Property Type="int" Name="HasExecutive" Value="1"/>
+      <Property Type="bool" Name="AbortExecution" Value="false"/>
+      <Property Type="bool" Name="ReleaseDataFlag" Value="false"/>
+      <Property Type="QString" Name="NodeName" Value="vtkDataSetMapper14"/>
+      <Property Type="QString" Name="objectName" Value="vtkDataSetMapper14"/>
+    </Node>
+    <Node X="-1338" Y="-325" Name="vtkActor15" ClassName="vtkActor" ID="4">
+      <Property Type="QColor" Name="Color" Value="#ffffff,255"/>
+      <Property Type="double" Name="Opacity" Value="1"/>
+      <Property Type="Point3D" Name="Position" Value="0, 0, 0"/>
+      <Property Type="Point3D" Name="Scale" Value="1, 1, 1"/>
+      <Property Type="Point3D" Name="Orientation" Value="0, 0, 0"/>
+      <Property Type="bool" Name="Visible" Value="true"/>
+      <Property Type="bool" Name="Pickable" Value="true"/>
+      <Property Type="bool" Name="Dragable" Value="true"/>
+      <Property Type="QString" Name="NodeName" Value="vtkActor15"/>
+      <Property Type="QString" Name="objectName" Value="vtkActor15"/>
+    </Node>
+    <Node X="-1323" Y="-243" Name="vtkRenderer16" ClassName="vtkRenderer" ID="5">
+      <Property Type="QColor" Name="BackgroundColor" Value="#9e18ff,255"/>
+      <Property Type="bool" Name="ShowGrid" Value="false"/>
+      <Property Type="bool" Name="LightsFollowCamera" Value="true"/>
+      <Property Type="bool" Name="TwoSidedLighting" Value="true"/>
+      <Property Type="QString" Name="NodeName" Value="vtkRenderer16"/>
+      <Property Type="QString" Name="objectName" Value="vtkRenderer16"/>
+    </Node>
+    <Node X="-1329" Y="-130" Name="vtkRenderWindow17" ClassName="vtkRenderWindow" ID="6">
+      <Property Type="QString" Name="NodeName" Value="vtkRenderWindow17"/>
+      <Property Type="QString" Name="objectName" Value="vtkRenderWindow17"/>
+    </Node>
+    <Node X="-1346" Y="-819" Name="vtkCone19" ClassName="vtkCone" ID="7">
+      <Property Type="double" Name="Angle" Value="45"/>
+      <Property Type="QString" Name="NodeName" Value="vtkCone19"/>
+      <Property Type="QString" Name="objectName" Value="vtkCone19"/>
+    </Node>
+    <Node X="-1180" Y="-818" Name="vtkBox21" ClassName="vtkBox" ID="8">
+      <Property Type="Point3D" Name="XMin" Value="1e+299, 1e+299, 1e+299"/>
+      <Property Type="Point3D" Name="XMax" Value="-1e+299, -1e+299, -1e+299"/>
+      <Property Type="BoundingBox3D" Name="Bounds" Value="1e+299, 1e+299, 1e+299, -1e+299, -1e+299, -1e+299"/>
+      <Property Type="QString" Name="NodeName" Value="vtkBox21"/>
+      <Property Type="QString" Name="objectName" Value="vtkBox21"/>
+    </Node>
+    <Node X="-1353" Y="-704" Name="vtkImplicitBoolean23" ClassName="vtkImplicitBoolean" ID="9">
+      <Property Type="Operation" Name="Operation" Value="0"/>
+      <Property Type="QString" Name="NodeName" Value="vtkImplicitBoolean23"/>
+      <Property Type="QString" Name="objectName" Value="vtkImplicitBoolean23"/>
+    </Node>
+    <Connection Sender="vtkSampleFunction12" SPathIndex="2" Receiver="vtkContourFilter13" RPathIndex="3"/>
+    <Connection Sender="vtkContourFilter13" SPathIndex="2" Receiver="vtkDataSetMapper14" RPathIndex="2"/>
+    <Connection Sender="vtkDataSetMapper14" SPathIndex="3" Receiver="vtkActor15" RPathIndex="3"/>
+    <Connection Sender="vtkActor15" SPathIndex="2" Receiver="vtkRenderer16" RPathIndex="1"/>
+    <Connection Sender="vtkRenderer16" SPathIndex="3" Receiver="vtkRenderWindow17" RPathIndex="1"/>
+    <Connection Sender="vtkImplicitBoolean23" SPathIndex="1" Receiver="vtkSampleFunction12" RPathIndex="3"/>
+    <Connection Sender="vtkSphere11" SPathIndex="1" Receiver="vtkImplicitBoolean23" RPathIndex="2"/>
+    <Connection Sender="vtkCone19" SPathIndex="1" Receiver="vtkImplicitBoolean23" RPathIndex="2"/>
+    <Connection Sender="vtkBox21" SPathIndex="1" Receiver="vtkImplicitBoolean23" RPathIndex="2"/>
+  </ProjectPart>
+  <ProjectPart ID="ScriptEnvironment"/>
+  <ProjectPart ID="Script"><![CDATA[]]></ProjectPart>
+  <ProjectPart ID="VtkSystem"/>
+</VWVisProject>

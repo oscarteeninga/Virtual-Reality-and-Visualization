@@ -1,0 +1,158 @@
+<!DOCTYPE VWVisProject>
+<VWVisProject>
+  <ProjectPart ID="VisNetwork">
+    <Node X="-1524" Y="-808" Name="vtkCustomPolyDataSource24" ClassName="vtkCustomPolyDataSource" ID="0">
+      <Property Type="bool" Name="StoreData" Value="false"/>
+      <Property Type="int" Name="HasExecutive" Value="1"/>
+      <Property Type="bool" Name="AbortExecution" Value="false"/>
+      <Property Type="bool" Name="ReleaseDataFlag" Value="false"/>
+      <Property Type="QString" Name="NodeName" Value="vtkCustomPolyDataSource24"/>
+      <Property Type="QString" Name="objectName" Value="vtkCustomPolyDataSource24"/>
+    </Node>
+    <Node X="-1540" Y="-686" Name="vtkTubeFilter25" ClassName="vtkTubeFilter" ID="1">
+      <Property Type="double" Name="Radius" Value="0.5"/>
+      <Property Type="VaryRadius" Name="VaryRadius" Value="0"/>
+      <Property Type="int" Name="NumberOfSides" Value="3"/>
+      <Property Type="double" Name="RadiusFactor" Value="10"/>
+      <Property Type="Point3D" Name="DefaultNormal" Value="0, 0, 1"/>
+      <Property Type="bool" Name="UseDefaultNormal" Value="false"/>
+      <Property Type="bool" Name="SidesShareVertices" Value="true"/>
+      <Property Type="bool" Name="Capping" Value="false"/>
+      <Property Type="int" Name="OnRatio" Value="1"/>
+      <Property Type="int" Name="Offset" Value="0"/>
+      <Property Type="TCoords" Name="GenerateTCoords" Value="0"/>
+      <Property Type="int" Name="HasExecutive" Value="1"/>
+      <Property Type="bool" Name="AbortExecution" Value="false"/>
+      <Property Type="bool" Name="ReleaseDataFlag" Value="false"/>
+      <Property Type="QString" Name="NodeName" Value="vtkTubeFilter25"/>
+      <Property Type="QString" Name="objectName" Value="vtkTubeFilter25"/>
+    </Node>
+    <Node X="-1495" Y="-553" Name="vtkDataSetMapper26" ClassName="vtkDataSetMapper" ID="2">
+      <Property Type="bool" Name="ShowScalars" Value="true"/>
+      <Property Type="int" Name="HasExecutive" Value="1"/>
+      <Property Type="bool" Name="AbortExecution" Value="false"/>
+      <Property Type="bool" Name="ReleaseDataFlag" Value="false"/>
+      <Property Type="QString" Name="NodeName" Value="vtkDataSetMapper26"/>
+      <Property Type="QString" Name="objectName" Value="vtkDataSetMapper26"/>
+    </Node>
+    <Node X="-1430" Y="-383" Name="vtkActor27" ClassName="vtkActor" ID="3">
+      <Property Type="QColor" Name="Color" Value="#ffffff,255"/>
+      <Property Type="double" Name="Opacity" Value="1"/>
+      <Property Type="Point3D" Name="Position" Value="0, 0, 0"/>
+      <Property Type="Point3D" Name="Scale" Value="1, 1, 1"/>
+      <Property Type="Point3D" Name="Orientation" Value="0, 0, 0"/>
+      <Property Type="bool" Name="Visible" Value="true"/>
+      <Property Type="bool" Name="Pickable" Value="true"/>
+      <Property Type="bool" Name="Dragable" Value="true"/>
+      <Property Type="QString" Name="NodeName" Value="vtkActor27"/>
+      <Property Type="QString" Name="objectName" Value="vtkActor27"/>
+    </Node>
+    <Node X="-1369" Y="-113" Name="vtkRenderWindow29" ClassName="vtkRenderWindow" ID="4">
+      <Property Type="QString" Name="NodeName" Value="vtkRenderWindow29"/>
+      <Property Type="QString" Name="objectName" Value="vtkRenderWindow29"/>
+    </Node>
+    <Node X="-1137" Y="-807" Name="vtkSphereSource30" ClassName="vtkSphereSource" ID="5">
+      <Property Type="double" Name="Radius" Value="0.5"/>
+      <Property Type="Point3D" Name="Center" Value="0, 0, 0"/>
+      <Property Type="int" Name="ThetaResolution" Value="8"/>
+      <Property Type="int" Name="PhiResolution" Value="8"/>
+      <Property Type="double" Name="StartTheta" Value="0"/>
+      <Property Type="double" Name="EndTheta" Value="360"/>
+      <Property Type="double" Name="StartPhi" Value="0"/>
+      <Property Type="double" Name="EndPhi" Value="180"/>
+      <Property Type="bool" Name="LatLongTessellation" Value="false"/>
+      <Property Type="int" Name="HasExecutive" Value="1"/>
+      <Property Type="bool" Name="AbortExecution" Value="false"/>
+      <Property Type="bool" Name="ReleaseDataFlag" Value="false"/>
+      <Property Type="QString" Name="NodeName" Value="vtkSphereSource30"/>
+      <Property Type="QString" Name="objectName" Value="vtkSphereSource30"/>
+    </Node>
+    <Node X="-1220" Y="-686" Name="vtkGlyph3D31" ClassName="vtkGlyph3D" ID="6">
+      <Property Type="bool" Name="Scaling" Value="true"/>
+      <Property Type="ScaleMode" Name="ScaleMode" Value="0"/>
+      <Property Type="ColorMode" Name="ColorMode" Value="0"/>
+      <Property Type="double" Name="ScaleFactor" Value="1"/>
+      <Property Type="ValueRange" Name="Range" Value="0, 1"/>
+      <Property Type="bool" Name="Orient" Value="true"/>
+      <Property Type="bool" Name="Clamping" Value="false"/>
+      <Property Type="VectorMode" Name="VectorMode" Value="0"/>
+      <Property Type="IndexMode" Name="IndexMode" Value="0"/>
+      <Property Type="bool" Name="GeneratePointIds" Value="false"/>
+      <Property Type="QString" Name="PointIdsName" Value="InputPointIds"/>
+      <Property Type="int" Name="HasExecutive" Value="1"/>
+      <Property Type="bool" Name="AbortExecution" Value="false"/>
+      <Property Type="bool" Name="ReleaseDataFlag" Value="false"/>
+      <Property Type="QString" Name="NodeName" Value="vtkGlyph3D31"/>
+      <Property Type="QString" Name="objectName" Value="vtkGlyph3D31"/>
+    </Node>
+    <Node X="-1203" Y="-575" Name="vtkDataSetMapper32" ClassName="vtkDataSetMapper" ID="7">
+      <Property Type="bool" Name="ShowScalars" Value="true"/>
+      <Property Type="int" Name="HasExecutive" Value="1"/>
+      <Property Type="bool" Name="AbortExecution" Value="false"/>
+      <Property Type="bool" Name="ReleaseDataFlag" Value="false"/>
+      <Property Type="QString" Name="NodeName" Value="vtkDataSetMapper32"/>
+      <Property Type="QString" Name="objectName" Value="vtkDataSetMapper32"/>
+    </Node>
+    <Node X="-1193" Y="-407" Name="vtkActor33" ClassName="vtkActor" ID="8">
+      <Property Type="QColor" Name="Color" Value="#ffffff,255"/>
+      <Property Type="double" Name="Opacity" Value="1"/>
+      <Property Type="Point3D" Name="Position" Value="0, 0, 0"/>
+      <Property Type="Point3D" Name="Scale" Value="1, 1, 1"/>
+      <Property Type="Point3D" Name="Orientation" Value="0, 0, 0"/>
+      <Property Type="bool" Name="Visible" Value="true"/>
+      <Property Type="bool" Name="Pickable" Value="true"/>
+      <Property Type="bool" Name="Dragable" Value="true"/>
+      <Property Type="QString" Name="NodeName" Value="vtkActor33"/>
+      <Property Type="QString" Name="objectName" Value="vtkActor33"/>
+    </Node>
+    <Node X="-1367" Y="-245" Name="vtkRenderer34" ClassName="vtkRenderer" ID="9">
+      <Property Type="QColor" Name="BackgroundColor" Value="#b421ff,255"/>
+      <Property Type="bool" Name="ShowGrid" Value="false"/>
+      <Property Type="bool" Name="LightsFollowCamera" Value="true"/>
+      <Property Type="bool" Name="TwoSidedLighting" Value="true"/>
+      <Property Type="QString" Name="NodeName" Value="vtkRenderer34"/>
+      <Property Type="QString" Name="objectName" Value="vtkRenderer34"/>
+    </Node>
+    <Connection Sender="vtkSphereSource30" SPathIndex="2" Receiver="vtkGlyph3D31" RPathIndex="4"/>
+    <Connection Sender="vtkGlyph3D31" SPathIndex="2" Receiver="vtkDataSetMapper32" RPathIndex="2"/>
+    <Connection Sender="vtkDataSetMapper32" SPathIndex="3" Receiver="vtkActor33" RPathIndex="3"/>
+    <Connection Sender="vtkDataSetMapper26" SPathIndex="3" Receiver="vtkActor27" RPathIndex="3"/>
+    <Connection Sender="vtkTubeFilter25" SPathIndex="2" Receiver="vtkDataSetMapper26" RPathIndex="2"/>
+    <Connection Sender="vtkActor27" SPathIndex="2" Receiver="vtkRenderer34" RPathIndex="1"/>
+    <Connection Sender="vtkActor33" SPathIndex="2" Receiver="vtkRenderer34" RPathIndex="1"/>
+    <Connection Sender="vtkRenderer34" SPathIndex="3" Receiver="vtkRenderWindow29" RPathIndex="1"/>
+    <Connection Sender="vtkCustomPolyDataSource24" SPathIndex="2" Receiver="vtkTubeFilter25" RPathIndex="3"/>
+    <Connection Sender="vtkCustomPolyDataSource24" SPathIndex="2" Receiver="vtkGlyph3D31" RPathIndex="3"/>
+  </ProjectPart>
+  <ProjectPart ID="ScriptEnvironment"/>
+  <ProjectPart ID="Script"><![CDATA[// Event handler for OnRequestData event of vtkCustomPolyDataSource24
+function vtkCustomPolyDataSource24_OnRequestData()
+{
+	var nrPoints = 30;
+	var nrLines = nrPoints*2;
+
+	var points = new Array;
+	var lines = new Array;
+
+	for (i = 0; i < nrPoints; i++) {
+		points[i*3]   = VtkMath.randomNumber(-5, 5);
+		points[i*3+1] = VtkMath.randomNumber(-5, 5);
+		points[i*3+2] = VtkMath.randomNumber(-5, 5); 
+	}
+
+	for (i = 0; i < nrLines; i++) {
+		lines[i*2]   = VtkMath.randomNumber(0, nrPoints);
+		lines[i*2+1] = VtkMath.randomNumber(0, nrPoints);
+	}
+
+	vtkCustomPolyDataSource24.setPoints(points);
+	vtkCustomPolyDataSource24.setLines(lines);
+}
+vtkCustomPolyDataSource24.OnRequestData.connect(vtkCustomPolyDataSource24_OnRequestData);
+vtkCustomPolyDataSource24.markModified();
+
+
+]]></ProjectPart>
+  <ProjectPart ID="VtkSystem"/>
+  <ProjectPart ID="vtkCustomPolyDataSource24"/>
+</VWVisProject>
